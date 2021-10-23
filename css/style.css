@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #fff;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+.pc-navber {
+  top: 0;
+  left: 0;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 5px 0;
+  z-index: 100;
+}
+nav ul {
+  display: flex;
+  position: relative;
+  top: 0;
+  align-items: center;
+  margin-right: 10px;
+}
+nav ul li a {
+  padding: 3px 5px;
+  font-size: 16px;
+  color: #505050;
+}
+nav ul li a:hover {
+  color: #867474;
+}
+nav h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.pc-navber {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbtn {
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #eba3a6 30%, #65bff2);
+  padding: 18px 36px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.pc-header {
+  width: 100%;
+  vertical-align: bottom;
+}
+.sp-header {
+  display: none;
+}
+.header-bottom {
+  background: #f4ece1;
+  text-align: center;
+}
+.header-bottom img {
+  width: 90vh;
+}
+.header-bottom img:hover {
+  opacity: 0.8;
+}
+
+.sp-navbar {
+  display: none;
+}
+header {
+  margin-top: 76px;
+}
+@media screen and (max-width: 500px) {
+  .pc-navber {
+    display: none;
+  }
+
+  .pc-header {
+    display: none;
+  }
+  .sp-header {
+    display: block;
+    width: 100%;
+  }
+
+  .sp-navbar {
+    display: block;
+  }
+  header {
+    margin-top: 0px;
+  }
+
+  /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+  .openbtn {
+    /*ボタン内側の基点となるためrelativeを指定。
+追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+    position: fixed;
+    top: 19px;
+    right: 12px;
+    background: #d97c8c;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  /*ボタン内側*/
+  .openbtn span {
+    display: inline-block;
+    transition: all 0.4s; /*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 2px;
+    border-radius: 5px;
+    background: #fff;
+    width: 45%;
+  }
+
+  .openbtn span:nth-of-type(1) {
+    top: 13px;
+  }
+
+  .openbtn span:nth-of-type(2) {
+    top: 19px;
+  }
+
+  .openbtn span:nth-of-type(3) {
+    top: 25px;
+  }
+
+  .openbtn span:nth-of-type(3)::after {
+    content: "Menu"; /*3つ目の要素のafterにMenu表示を指定*/
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    color: #fff;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+  }
+
+  /*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+
+  .openbtn.active span:nth-of-type(1) {
+    top: 14px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .openbtn.active span:nth-of-type(3) {
+    top: 26px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
+
+  .openbtn.active span:nth-of-type(3)::after {
+    content: "Close"; /*3つ目の要素のafterにClose表示を指定*/
+    transform: translateY(0) rotate(-45deg);
+    top: 5px;
+    left: 4px;
+  }
+
+  .navbtn span {
+    font-size: 10px;
+  }
+  .w-container {
+    max-width: 1166px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .pc-header {
+    width: 100%;
+    vertical-align: bottom;
+  }
+  .hero-container {
+    height: 100%;
+  }
+  .hero-container a img {
+    width: 90%;
+  }
+  .header-bottom {
+    text-align: center;
+    background-color: #f4ece1;
+  }
+  .header-bottom img:hover {
+    opacity: 0.8;
+  }
+}
+/* いつか独立して見いたいあなたへセクション */
+
+.worries-point {
+  background-color: #867474;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding: 60px 0;
+}
+
+.check-point {
+  padding: 100px 50px 100px 50px;
+  background-image: url(../img/check-point.png);
+  background-position: top center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.check-left ul li {
+  padding-top: 36px;
+  font-size: 22px;
+}
+.check-left ul li span {
+  margin-right: 5px;
+}
+
+.check-right {
+  content: "";
+  flex-basis: 26%;
+}
+.kaiketu-container h2 {
+  text-align: center;
+  margin: 30px;
+  font-size: 45px;
+}
+.kaiketu-container p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+.kaiketu-container p span {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.structure img {
+  margin-top: 100px;
+  max-width: 100%;
+}
+/* よくある起業スクールとの違いとは？ */
+
+.feature-wrapper {
+  background: url(../img/hemp-cloth.jpg);
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  height: 160vh;
+  background-repeat: repeat;
+  padding-top: 67px;
+}
+.feature-container {
+  background: #fff;
+  padding: 50px;
+  margin: 50px;
+}
+.feature-container img {
+  width: 220px;
+}
+.feature-container h2 {
+  font-size: 38px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 30px;
+}
+.feature-box {
+  display: flex;
+  align-items: center;
+}
+.number-box {
+  margin: 0 15px;
+  font-size: 80px;
+  font-family: "Judson", serif;
+}
+.p-box {
+  font-size: 28px;
+  max-width: 507px;
+}
+.p-box p {
+  margin: 0 15px;
+}
+.p-box span {
+  font-size: 18px;
+}
+.outer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
