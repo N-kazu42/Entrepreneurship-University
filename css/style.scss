@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -21,15 +20,9 @@ a {
 .pc-navber {
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: fixed;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
   padding: 5px 0;
@@ -37,16 +30,10 @@ a {
 }
 
 nav ul {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   top: 0;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-right: 10px;
 }
 
@@ -67,24 +54,14 @@ nav h1 {
 }
 
 .pc-navber {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbtn {
   border: none;
   border-radius: 5px;
-  background: -webkit-linear-gradient(45deg, #eba3a6 30%, #65bff2);
   background: linear-gradient(45deg, #eba3a6 30%, #65bff2);
   padding: 18px 36px;
   font-size: 16px;
@@ -156,7 +133,6 @@ header {
   /*ボタン内側*/
   .openbtn span {
     display: inline-block;
-    -webkit-transition: all 0.4s;
     transition: all 0.4s;
     /*アニメーションの設定*/
     position: absolute;
@@ -189,8 +165,7 @@ header {
   .openbtn.active span:nth-of-type(1) {
     top: 14px;
     left: 18px;
-    -webkit-transform: translateY(6px) rotate(-45deg);
-            transform: translateY(6px) rotate(-45deg);
+    transform: translateY(6px) rotate(-45deg);
     width: 30%;
   }
   .openbtn.active span:nth-of-type(2) {
@@ -199,15 +174,13 @@ header {
   .openbtn.active span:nth-of-type(3) {
     top: 26px;
     left: 18px;
-    -webkit-transform: translateY(-6px) rotate(45deg);
-            transform: translateY(-6px) rotate(45deg);
+    transform: translateY(-6px) rotate(45deg);
     width: 30%;
   }
   .openbtn.active span:nth-of-type(3)::after {
     content: "Close";
     /*3つ目の要素のafterにClose表示を指定*/
-    -webkit-transform: translateY(0) rotate(-45deg);
-            transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-45deg);
     top: 5px;
     left: 4px;
   }
@@ -239,6 +212,7 @@ header {
 }
 
 /* いつか独立して見いたいあなたへセクション */
+
 .worries-point {
   background-color: #867474;
   color: #fff;
@@ -253,14 +227,8 @@ header {
   background-position: top center;
   background-size: cover;
   height: 80vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .check-left ul li {
@@ -274,9 +242,7 @@ header {
 
 .check-right {
   content: "";
-  -webkit-flex-basis: 26%;
-      -ms-flex-preferred-size: 26%;
-          flex-basis: 26%;
+  flex-basis: 26%;
 }
 
 .kaiketu-container h2 {
@@ -302,6 +268,7 @@ header {
 }
 
 /* よくある起業スクールとの違いとは？ */
+
 .feature-wrapper {
   background: url(../img/hemp-cloth.jpg);
   background-color: rgba(255, 255, 255, 0.7);
@@ -329,14 +296,8 @@ header {
 }
 
 .feature-box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .number-box {
@@ -359,67 +320,44 @@ header {
 }
 
 .outer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 50px;
 }
 
 /* ナガイ担当部分 */
-#support-member {
-  background-color: #FFF6F6;
+#support-member{
+  background-color:#FFF6F6 ;
+  
   padding: 8rem 0;
 }
-
-.support-member-title {
-  text-align: center;
+.support-member{
+  &-title{
+    text-align: center;
+    h2{
+      font-size: 2.5rem;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+  }
+  &-wrapper{
+    background-color: #fff;
+    margin: 10rem;
+    border-radius:50px;
+    display: flex;
+    justify-content: center;
+  }
+  &-box{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    
+    img{
+      width: 15%;
+      padding: 1rem;
+    }
+  }
 }
-
-.support-member-title h2 {
-  font-size: 2.5rem;
-}
-
-.support-member-title p {
-  font-size: 1.5rem;
-}
-
-.support-member-wrapper {
-  background-color: #fff;
-  margin: 10rem;
-  border-radius: 50px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.support-member-box {
-  padding: 3rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  max-width: 1000px;
-}
-
-.support-member-box img {
-  width: 15%;
-  padding: 1rem;
-}
-/*# sourceMappingURL=style.css.map */
