@@ -22,12 +22,10 @@ a {
   top: 0;
   left: 0;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.8);
@@ -38,13 +36,11 @@ a {
 
 nav ul {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   top: 0;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin-right: 10px;
@@ -68,15 +64,12 @@ nav h1 {
 
 .pc-navber {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -84,7 +77,6 @@ nav h1 {
 .navbtn {
   border: none;
   border-radius: 5px;
-  background: -webkit-linear-gradient(45deg, #eba3a6 30%, #65bff2);
   background: linear-gradient(45deg, #eba3a6 30%, #65bff2);
   padding: 18px 36px;
   font-size: 16px;
@@ -254,11 +246,9 @@ header {
   background-size: cover;
   height: 80vh;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -274,9 +264,8 @@ header {
 
 .check-right {
   content: "";
-  -webkit-flex-basis: 26%;
-      -ms-flex-preferred-size: 26%;
-          flex-basis: 26%;
+  -ms-flex-preferred-size: 26%;
+      flex-basis: 26%;
 }
 
 .kaiketu-container h2 {
@@ -330,11 +319,9 @@ header {
 
 .feature-box {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -360,11 +347,9 @@ header {
 
 .outer {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
@@ -393,11 +378,9 @@ header {
   margin: 5rem 10rem;
   border-radius: 50px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -405,16 +388,13 @@ header {
 .support-member-box {
   padding: 3rem;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 1000px;
 }
 
@@ -493,11 +473,9 @@ header {
 .schedule-wrapper {
   margin: 5rem 10rem;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -505,18 +483,52 @@ header {
 .schedule-box {
   padding: 3rem;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
 .schedule-box img {
   width: 100%;
-  padding: 1rem;
+}
+
+.schedule-box img.sp {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .schedule-wrapper {
+    margin: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .schedule-title h2 {
+    font-size: 2rem;
+  }
+  .schedule-title p {
+    font-size: 1rem;
+  }
+  .schedule-wrapper {
+    margin: 3rem;
+  }
+  .schedule-box {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .schedule-title h2 {
+    font-size: 1.5rem;
+  }
+  .schedule-title p {
+    font-size: 0.7rem;
+  }
+  .schedule-wrapper {
+    margin: 3rem 0.3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

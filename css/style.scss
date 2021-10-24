@@ -455,7 +455,51 @@ header {
 
     img {
       width: 100%;
-      padding: 1rem;
+      &.sp{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1080px) {
+  .schedule {
+    &-wrapper {
+      margin: 3rem;
+    }
+    
+  }
+}
+@media screen and (max-width: 768px) {
+  .schedule {
+    &-title {
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    &-wrapper {
+      margin: 3rem;
+    }
+    &-box {
+      padding: 0;
+      
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .schedule {
+    &-title {
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.7rem;
+      }
+    }
+    &-wrapper {
+      margin: 3rem 0.3rem;
     }
   }
 }
