@@ -759,3 +759,181 @@ header {
     }
   }
 }
+
+// 生徒の声
+#voice{
+  padding: 8rem 0;
+}
+.voice {
+  &-title {
+    text-align: center;
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  &-wrapper {
+    margin: 5rem 10rem;
+    display: flex;
+    justify-content: center;
+  }
+  &-box {
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      width: 100%;
+      &.voice1{
+        width: 50%;
+      }
+      &.voice2{
+        width: 33%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1080px) {
+  .voice {
+    &-wrapper {
+      margin: 3rem;
+    }
+    
+  }
+}
+@media screen and (max-width: 768px) {
+  .voice {
+    &-title {
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    &-wrapper {
+      margin: 3rem;
+    }
+    &-box {
+      padding: 0;
+      
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .voice {
+    &-title {
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.7rem;
+      }
+    }
+    &-wrapper {
+      margin: 3rem 0.3rem;
+    }
+    &-box {
+     
+      img {
+        &.voice1{
+          width: 100%;
+        }
+        &.voice2{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+// 入会までの流れ
+#flow{
+  padding: 8rem 0;
+}
+.flow {
+  &-title {
+    text-align: center;
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  &-wrapper {
+    margin: 5rem 10rem;
+    display: flex;
+    justify-content: center;
+  }
+  &-box {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      margin-top: -8%;
+      &.flow5{
+        z-index: -5;
+      }
+      &.flow4{
+        z-index: -4;
+      }
+      &.flow3{
+        z-index: -3;
+      }
+      &.flow2{
+        z-index: -2;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1080px) {
+  .flow {
+    &-wrapper {
+      margin: 3rem;
+    }
+    
+  }
+}
+@media screen and (max-width: 768px) {
+  .flow {
+    &-title {
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    &-wrapper {
+      margin: 3rem;
+    }
+    &-box {
+      padding: 0;
+      
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .flow {
+    &-title {
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.7rem;
+      }
+    }
+    &-wrapper {
+      margin: 3rem 0.3rem;
+    }
+    
+  }
+
+}
+
