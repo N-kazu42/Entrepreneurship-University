@@ -114,15 +114,43 @@ header {
   padding: 60px 0;
 }
 
+/* ↓↓ tsuchiya update ↓↓ */
 .check-point {
-  padding: 100px 50px 100px 50px;
-  background-image: url(../img/check-point.png);
-  background-position: top center;
-  background-size: cover;
-  height: 80vh;
+  padding: 100px 50px 0 50px;
+  /* background-image: url(../img/check-point.png); */
+  /* background-position: top center; */
+  /* background-size: cover; */
+  background-color: #fdf5ea;
+  height: auto;
   display: flex;
   justify-content: center;
+  position: relative;
 }
+.check-point::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 170px 0 0 50vw;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.check-point::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 170px 50vw;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* ↑↑ tsuchiya update ↑↑ */
 
 .check-left ul li {
   padding-top: 36px;
@@ -277,7 +305,7 @@ header {
   }
   .check-left {
     margin-top: -55px;
-    margin: 10px 0 39px 0;
+    margin: 0 0 39px 0;
   }
   .check-left ul li {
     padding-top: 36px;
@@ -514,6 +542,12 @@ header {
   .worries-point {
     font-size: 20px;
   }
+  .check-left ul li {
+    margin: 0 18%;
+  }
+  .check-right img {
+    display: none;
+  }
   .kaiketu-container h2 {
     font-size: 30px;
   }
@@ -714,6 +748,15 @@ header {
     background-image: none;
     background-color: #f4ece1;
   }
+  .check-left ul li {
+    margin: 0;
+  }
+  .check-point::before {
+    display: none;
+  }
+  .check-point::after {
+    display: none;
+  }
   .kaiketu-container h2 {
     margin-top: 52px;
     font-size: 23px;
@@ -749,11 +792,7 @@ header {
   }
 }
 
-
-
-
 /* ナガイ担当ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
-
 
 // 専門家メンバーセクション
 #support-member {
@@ -859,7 +898,7 @@ header {
   }
 }
 // スケジュール
-#schedule{
+#schedule {
   padding: 8rem 0;
 }
 .schedule {
@@ -878,13 +917,12 @@ header {
     justify-content: center;
   }
   &-box {
-    padding: 3rem;
     display: flex;
     flex-direction: column;
 
     img {
       width: 100%;
-      &.sp{
+      &.sp {
         display: none;
       }
     }
@@ -895,7 +933,6 @@ header {
     &-wrapper {
       margin: 3rem;
     }
-    
   }
 }
 @media screen and (max-width: 768px) {
@@ -913,7 +950,6 @@ header {
     }
     &-box {
       padding: 0;
-      
     }
   }
 }
@@ -934,8 +970,8 @@ header {
 }
 
 // 生徒の声
-#voice{
-  padding: 8rem 0;
+#voice {
+  padding: 3rem 0;
 }
 .voice {
   &-title {
@@ -959,10 +995,10 @@ header {
 
     img {
       width: 100%;
-      &.voice1{
+      &.voice1 {
         width: 50%;
       }
-      &.voice2{
+      &.voice2 {
         width: 33%;
       }
     }
@@ -973,7 +1009,6 @@ header {
     &-wrapper {
       margin: 3rem;
     }
-    
   }
 }
 @media screen and (max-width: 768px) {
@@ -991,7 +1026,6 @@ header {
     }
     &-box {
       padding: 0;
-      
     }
   }
 }
@@ -1009,23 +1043,25 @@ header {
       margin: 3rem 0.3rem;
     }
     &-box {
-     
       img {
-        &.voice1{
+        &.voice1 {
           width: 100%;
         }
-        &.voice2{
-          width: 100%;
+        &.voice2 {
+          width: 50%;
+          &.pc{
+            display: none;
+          }
         }
       }
     }
   }
-
 }
 
 // 入会までの流れ
-#flow{
+#flow {
   padding: 8rem 0;
+  background-color: #fff6f6;
 }
 .flow {
   &-title {
@@ -1050,17 +1086,23 @@ header {
     img {
       width: 100%;
       margin-top: -8%;
-      &.flow5{
-        z-index: -5;
+      &.sp2 {
+        display: none;
       }
-      &.flow4{
-        z-index: -4;
+      &.flow5 {
+        z-index: 2;
       }
-      &.flow3{
-        z-index: -3;
+      &.flow4 {
+        z-index: 3;
       }
-      &.flow2{
-        z-index: -2;
+      &.flow3 {
+        z-index: 4;
+      }
+      &.flow2 {
+        z-index: 5;
+      }
+      &.flow1 {
+        z-index: 6;
       }
     }
   }
@@ -1070,7 +1112,6 @@ header {
     &-wrapper {
       margin: 3rem;
     }
-    
   }
 }
 @media screen and (max-width: 768px) {
@@ -1088,7 +1129,6 @@ header {
     }
     &-box {
       padding: 0;
-      
     }
   }
 }
@@ -1105,8 +1145,13 @@ header {
     &-wrapper {
       margin: 3rem 0.3rem;
     }
-    
+    &-box {
+      img {
+        margin-top: 0;
+        &.sp2 {
+          display: block;
+        }
+      }
+    }
   }
-
 }
-

@@ -109,12 +109,16 @@ a {
   vertical-align: bottom;
 }
 
+.clear {
+  display: none;
+}
+
 .sp-header {
   display: none;
 }
 
 .header-bottom {
-  background: #f4ece1;
+  background: #f5ece1;
   text-align: center;
   padding-bottom: 25px;
 }
@@ -137,7 +141,6 @@ header {
 
 /* いつか独立して見いたいあなたへセクション */
 .worries-point {
-  margin: 0 calc(50% - 50vw);
   background-color: #867474;
   color: #fff;
   text-align: center;
@@ -147,18 +150,22 @@ header {
 
 /* ↓↓ tsuchiya update ↓↓ */
 .check-point {
-  margin: 0 calc(50% - 50vw);
   padding: 100px 50px 0 50px;
   /* background-image: url(../img/check-point.png); */
   /* background-position: top center; */
   /* background-size: cover; */
-  background-color: #FDF5EA;
+  background-color: #fdf5ea;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
-.check-point::before{
+
+.check-point::before {
   content: "";
   display: inline-block;
   width: 0;
@@ -170,7 +177,8 @@ header {
   left: 0;
   bottom: 0;
 }
-.check-point::after{
+
+.check-point::after {
   content: "";
   display: inline-block;
   width: 0;
@@ -182,35 +190,26 @@ header {
   right: 0;
   bottom: 0;
 }
-/* ↑↑ tsuchiya update ↑↑ */
 
+/* ↑↑ tsuchiya update ↑↑ */
 .check-left ul li {
   padding-top: 36px;
   font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .check-left ul li span {
   margin-right: 5px;
 }
-/* ↓↓ tsuchiya update ↓↓ */
-.check-left ul li:first-child{
-  padding-top: 0;
-}
-/* ↑↑ tsuchiya update ↑↑ */
-
 
 .check-right {
   content: "";
   -ms-flex-preferred-size: 26%;
       flex-basis: 26%;
 }
-/* ↓↓ tsuchiya update ↓↓ */
-.check-right img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-/* ↑↑ tsuchiya update ↑↑ */
+
 .kaiketu-container h2 {
   text-align: center;
   margin: 30px;
@@ -248,7 +247,7 @@ header {
   background-blend-mode: lighten;
   background-repeat: repeat;
   padding-top: 40px;
-  padding-bottom: 85px;
+  padding-bottom: 55px;
 }
 
 .feature-container {
@@ -307,6 +306,10 @@ header {
 }
 
 /* 起業まで導く６つのコンテンツ */
+.sixcontents {
+  margin-top: 50px;
+}
+
 .band {
   text-align: center;
   background: #cc8b8b;
@@ -358,13 +361,6 @@ header {
 .six-item img {
   max-width: 350px;
 }
-/* ↓↓ tsuchiya update ↓↓ */
-@media screen and (max-width: 1200px) {
-  .check-left ul li{
-    padding-top: 15px;
-  }
-}
-/* ↑↑ tsuchiya update ↑↑ */
 
 @media screen and (max-width: 992px) {
   nav ul li a {
@@ -384,27 +380,18 @@ header {
     letter-spacing: 2px;
     font-size: 11px;
   }
- /* ↓↓ tsuchiya update ↓↓ */
   /* いつか独立してみたい */
   .check-point {
-    /* height: 50%; */
-    padding-top: 70px;
-  }
-  .check-point::before{
-    border-width: 80px 0 0 50vw;
-  }
-  .check-point::after{
-    border-width: 0 0 80px 50vw;
+    height: 50%;
   }
   .check-left {
-    /* margin-top: -55px; */
-    margin-bottom: 39px;
+    margin-top: -55px;
+    margin: 0 0 39px 0;
   }
   .check-left ul li {
-    /* padding-top: 36px; */
+    padding-top: 36px;
     font-size: 18px;
   }
-  /* ↑↑ tsuchiya update ↑↑ */
   .check-left ul li span {
     margin-right: 5px;
   }
@@ -442,7 +429,6 @@ header {
     background-blend-mode: lighten;
     background-repeat: repeat;
     padding-top: 40px;
-    padding-bottom: 340px;
   }
   /* ６つのコンテンツ */
   .band {
@@ -456,9 +442,6 @@ header {
   }
   .six-item:nth-of-type(2n) {
     padding-left: 20px;
-  }
-  .feature-wrapper {
-    height: 113vh;
   }
 }
 
@@ -613,11 +596,11 @@ header {
     height: 100%;
   }
   .hero-container a img {
-    width: 90%;
+    width: 78%;
+    margin: 0 auto;
   }
   .header-bottom {
     text-align: center;
-    background-color: #f4ece1;
   }
   .header-bottom img:hover {
     opacity: 0.8;
@@ -626,13 +609,16 @@ header {
   .worries-point {
     font-size: 20px;
   }
+  .check-left ul li {
+    margin: 0 18%;
+  }
+  .check-right img {
+    display: none;
+  }
   .kaiketu-container h2 {
     font-size: 30px;
   }
   /* よくある起業スクールとの違い */
-  .feature-wrapper {
-    padding-bottom: 0px;
-  }
   .feature-container {
     padding: 10px;
     margin: 0px;
@@ -683,9 +669,6 @@ header {
         -ms-flex-order: 1;
             order: 1;
   }
-  .feature-wrapper {
-    height: 200vh;
-  }
   /* ６つのコンテンツ */
   .band h2 {
     font-size: 30px;
@@ -724,30 +707,14 @@ header {
   .worries-point {
     font-size: 25px;
   }
-  /* ↓↓ tsuchiya update ↓↓ */
   .check-point {
-    padding: 50px 26px 90px 24px;
+    padding: 25px 26px 90px 30px;
     display: block;
   }
-  .check-point::before {
-    border-width: 50px 0 0 50vw;
-  }
-  .check-point::after {
-    border-width: 0 0 50px 50vw;
-  }
-  .check-left{
-    max-width: 450px;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-  .check-right{
-    display: none;
-  }
   .check-left ul li {
-    padding-top: 25px;
+    padding-top: 36px;
     font-size: 17px;
   }
-  /* ↑↑ tsuchiya update ↑↑ */
   .kaiketu-container h2 {
     margin: 20px;
     font-size: 31px;
@@ -756,9 +723,6 @@ header {
     font-size: 14px;
   }
   /* 図解 */
-  .structure {
-    margin: 0 calc(50% - 50vw);
-  }
   .structure img {
     margin-top: 45px;
   }
@@ -817,7 +781,7 @@ header {
     padding-top: 48px;
   }
   .feature-container h2 {
-    font-size: 17px;
+    font-size: 25px;
   }
   .p-box {
     font-size: 15px;
@@ -827,7 +791,7 @@ header {
     margin: 40px 0px;
   }
   .band h2 {
-    font-size: 26px;
+    font-size: 30px;
   }
   .six-item:nth-of-type(2n) {
     padding-left: 0px;
@@ -838,15 +802,42 @@ header {
   .pc-header {
     display: none;
   }
+  .pc {
+    display: none;
+  }
   .hero .clear {
+    display: block;
+  }
+  .header-bottom {
+    background: #f7eee9;
+  }
+  .clear {
+    display: block;
+  }
+  .sab {
     display: block;
   }
   .navbtn {
     padding: 16px 12px;
     font-size: 13px;
   }
+  .check-point {
+    padding: 25px 50px 38px 50px;
+    position: relative;
+    background-image: none;
+    background-color: #f4ece1;
+  }
+  .check-left ul li {
+    margin: 0;
+  }
+  .check-point::before {
+    display: none;
+  }
+  .check-point::after {
+    display: none;
+  }
   .kaiketu-container h2 {
-    margin: 23px;
+    margin-top: 52px;
     font-size: 23px;
   }
   .kaiketu-container p span {
@@ -855,7 +846,24 @@ header {
   .p-box span {
     font-size: 12px;
   }
+  /* トライアングル */
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 90px 0 90px;
+    border-color: #867474 transparent transparent transparent;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  /* よくある起業スクールとの違い */
+  .feature-container h2 {
+    font-size: 19px;
+  }
   /* 6つのコンテンツ */
+  .band h2 {
+    font-size: 25px;
+  }
   .six-item p {
     font-size: 19px;
   }
@@ -987,7 +995,6 @@ header {
 }
 
 .schedule-box {
-  padding: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1039,7 +1046,7 @@ header {
 }
 
 #voice {
-  padding: 8rem 0;
+  padding: 3rem 0;
 }
 
 .voice-title {
@@ -1120,12 +1127,16 @@ header {
     width: 100%;
   }
   .voice-box img.voice2 {
-    width: 100%;
+    width: 50%;
+  }
+  .voice-box img.voice2.pc {
+    display: none;
   }
 }
 
 #flow {
   padding: 8rem 0;
+  background-color: #fff6f6;
 }
 
 .flow-title {
@@ -1166,20 +1177,28 @@ header {
   margin-top: -8%;
 }
 
+.flow-box img.sp2 {
+  display: none;
+}
+
 .flow-box img.flow5 {
-  z-index: -5;
+  z-index: 2;
 }
 
 .flow-box img.flow4 {
-  z-index: -4;
+  z-index: 3;
 }
 
 .flow-box img.flow3 {
-  z-index: -3;
+  z-index: 4;
 }
 
 .flow-box img.flow2 {
-  z-index: -2;
+  z-index: 5;
+}
+
+.flow-box img.flow1 {
+  z-index: 6;
 }
 
 @media screen and (max-width: 1080px) {
@@ -1212,6 +1231,12 @@ header {
   }
   .flow-wrapper {
     margin: 3rem 0.3rem;
+  }
+  .flow-box img {
+    margin-top: 0;
+  }
+  .flow-box img.sp2 {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
