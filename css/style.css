@@ -766,7 +766,34 @@ header {
   }
 }
 
-/* ナガイ担当部分 */
+@media screen and (max-width: 500px) {
+  .pc-header {
+    display: none;
+  }
+  .hero .clear {
+    display: block;
+  }
+  .navbtn {
+    padding: 16px 12px;
+    font-size: 13px;
+  }
+  .kaiketu-container h2 {
+    margin: 23px;
+    font-size: 23px;
+  }
+  .kaiketu-container p span {
+    font-size: 28px;
+  }
+  .p-box span {
+    font-size: 12px;
+  }
+  /* 6つのコンテンツ */
+  .six-item p {
+    font-size: 19px;
+  }
+}
+
+/* ナガイ担当ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 #support-member {
   background-color: #fff6f6;
   padding: 8rem 0;
