@@ -49,6 +49,7 @@ a {
 .sp {
   display: none;
 }
+
 .pc-navber h1 {
   font-size: 24px;
   font-weight: 500;
@@ -69,21 +70,28 @@ a {
   font-weight: 100;
   color: #fff;
   letter-spacing: 2px;
+  cursor: pointer;
+}
+.navbtn:hover {
+  opacity: 0.8;
 }
 .pc-header {
   width: 100%;
   vertical-align: bottom;
 }
+.clear {
+  display: none;
+}
 .sp-header {
   display: none;
 }
 .header-bottom {
-  background: #f4ece1;
+  background: #f5ece1;
   text-align: center;
   padding-bottom: 25px;
 }
 .header-bottom img {
-  width: 90%;
+  width: 70%;
 }
 .header-bottom img:hover {
   opacity: 0.8;
@@ -95,17 +103,258 @@ a {
 header {
   margin-top: 76px;
 }
-@media screen and (max-width: 500px) {
+
+/* いつか独立して見いたいあなたへセクション */
+
+.worries-point {
+  background-color: #867474;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding: 60px 0;
+}
+
+.check-point {
+  padding: 100px 50px 100px 50px;
+  background-image: url(../img/check-point.png);
+  background-position: top center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.check-left ul li {
+  padding-top: 36px;
+  font-size: 22px;
+  display: flex;
+}
+.check-left ul li span {
+  margin-right: 5px;
+}
+.check-right {
+  content: "";
+  flex-basis: 26%;
+}
+.kaiketu-container h2 {
+  text-align: center;
+  margin: 30px;
+  font-size: 45px;
+}
+.kaiketu-container p {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+}
+.kaiketu-container p span {
+  font-size: 35px;
+  font-weight: bold;
+}
+.structure {
+  margin-bottom: 32px;
+}
+.structure img {
+  margin-top: 100px;
+  max-width: 100%;
+}
+/* よくある起業スクールとの違いとは？ */
+.sab {
+  display: none;
+}
+.feature-wrapper {
+  background: url(../img/hemp-cloth.jpg);
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  background-repeat: repeat;
+  padding-top: 40px;
+  padding-bottom: 55px;
+}
+.feature-container {
+  background: #fff;
+  padding: 50px;
+  margin: 50px 150px 50px 150px;
+}
+.feature-container img {
+  width: 220px;
+}
+.feature-container h2 {
+  font-size: 38px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 30px;
+}
+.feature-box {
+  display: flex;
+  align-items: center;
+}
+.number-box {
+  margin: 0 15px;
+  font-size: 80px;
+  font-family: "Judson", serif;
+}
+.p-box {
+  font-size: 28px;
+  max-width: 600px;
+}
+.p-box p {
+  margin: 0 15px;
+}
+.p-box span {
+  font-size: 18px;
+}
+.outer {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+/* 起業まで導く６つのコンテンツ */
+.sixcontents {
+  margin-top: 50px;
+}
+.band {
+  text-align: center;
+  background: #cc8b8b;
+  margin: 50px 150px;
+  padding: 23px;
+}
+.band h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
+.flex-item {
+  display: flex;
+  max-width: 992px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.band {
+  text-align: center;
+  background: #cc8b8b;
+  margin: 66px 150px;
+  padding: 15px;
+}
+.six-item {
+  margin-bottom: 70px;
+  text-align: center;
+}
+.six-item:nth-of-type(2n) {
+  padding-left: 70px;
+}
+.six-item p {
+  margin: 0 auto;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.six-item img {
+  max-width: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  nav ul li a {
+    font-size: 14px;
+  }
+  .pc-navber ul li a {
+    font-size: 13px;
+  }
+  .navbtn {
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #eba3a6 30%, #65bff2);
+    padding: 19px 15px;
+    font-size: 12px;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 11px;
+  }
+
+  /* いつか独立してみたい */
+  .check-point {
+    height: 50%;
+  }
+  .check-left {
+    margin-top: -55px;
+    margin: 10px 0 39px 0;
+  }
+  .check-left ul li {
+    padding-top: 36px;
+    font-size: 18px;
+  }
+  .check-left ul li span {
+    margin-right: 5px;
+  }
+  .kaiketu-container p {
+    font-size: 17px;
+  }
+
+  /* よくある起業スクールとの違い */
+  .sp {
+    display: none;
+  }
+  .feature-container {
+    background: #fff;
+    padding: 50px;
+    margin: 50px;
+  }
+  .feature-container h2 {
+    font-size: 31px;
+  }
+  .number-box {
+    font-size: 65px;
+  }
+  .p-box {
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  .p-box span {
+    font-size: 13px;
+  }
+  .feature-container img {
+    width: 200px;
+  }
+  .feature-wrapper {
+    background: url(../img/hemp-cloth.jpg);
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+    background-repeat: repeat;
+    padding-top: 40px;
+  }
+
+  /* ６つのコンテンツ */
+  .band {
+    margin: 50px 35px;
+  }
+  .six-item {
+    margin-bottom: 44px;
+  }
+  .six-item p {
+    margin-bottom: 12px;
+  }
+  .six-item:nth-of-type(2n) {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pc-navber {
+    display: none;
+  }
+  header {
+    margin-top: 0px;
+  }
   .pc-navber {
     display: none;
   }
 
   .pc-header {
-    display: none;
-  }
-  .sp-header {
     display: block;
     width: 100%;
+  }
+  .sp-header {
+    display: none;
   }
 
   .sp-navbar {
@@ -113,6 +362,11 @@ header {
   }
   header {
     margin-top: 0px;
+  }
+
+  .navbtn {
+    padding: 19px 29px;
+    font-size: 15px;
   }
 
   /*========= ナビゲーションのためのCSS ===============*/
@@ -171,7 +425,9 @@ header {
     display: block;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 16px;
   }
 
   /*========= ボタンのためのCSS ===============*/
@@ -245,257 +501,26 @@ header {
     height: 100%;
   }
   .hero-container a img {
-    width: 90%;
+    width: 78%;
+    margin: 0 auto;
   }
   .header-bottom {
     text-align: center;
-    background-color: #f4ece1;
   }
   .header-bottom img:hover {
     opacity: 0.8;
   }
-}
-
-/* いつか独立して見いたいあなたへセクション */
-
-.worries-point {
-  margin: 0 calc(50% - 50vw);
-  background-color: #867474;
-  color: #fff;
-  text-align: center;
-  font-size: 30px;
-  padding: 60px 0;
-}
-
-.check-point {
-  margin: 0 calc(50% - 50vw);
-  padding: 100px 50px 100px 50px;
-  background-image: url(../img/check-point.png);
-  background-position: top center;
-  background-size: cover;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-}
-
-.check-left ul li {
-  padding-top: 36px;
-  font-size: 22px;
-}
-.check-left ul li span {
-  margin-right: 5px;
-}
-
-.check-right {
-  content: "";
-  flex-basis: 26%;
-}
-.kaiketu-container h2 {
-  text-align: center;
-  margin: 30px;
-  font-size: 45px;
-}
-.kaiketu-container p {
-  text-align: center;
-  font-size: 17px;
-  font-weight: 400;
-}
-.kaiketu-container p span {
-  font-size: 35px;
-  font-weight: bold;
-}
-.structure {
-  margin-bottom: 32px;
-}
-.structure img {
-  margin-top: 100px;
-  max-width: 100%;
-}
-/* よくある起業スクールとの違いとは？ */
-
-.feature-wrapper {
-  background: url(../img/hemp-cloth.jpg);
-  background-color: rgba(255, 255, 255, 0.7);
-  background-blend-mode: lighten;
-  background-repeat: repeat;
-  padding-top: 40px;
-  padding-bottom: 85px;
-}
-.feature-container {
-  background: #fff;
-  padding: 50px;
-  margin: 50px 150px 50px 150px;
-}
-.feature-container img {
-  width: 220px;
-}
-.feature-container h2 {
-  font-size: 38px;
-  font-weight: normal;
-  text-align: center;
-  margin-top: 30px;
-}
-.feature-box {
-  display: flex;
-  align-items: center;
-}
-.number-box {
-  margin: 0 15px;
-  font-size: 80px;
-  font-family: "Judson", serif;
-}
-.p-box {
-  font-size: 28px;
-  max-width: 600px;
-}
-.p-box p {
-  margin: 0 15px;
-}
-.p-box span {
-  font-size: 18px;
-}
-.outer {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-/* 起業まで導く６つのコンテンツ */
-
-.band {
-  text-align: center;
-  background: #cc8b8b;
-  margin: 50px 150px;
-  padding: 23px;
-}
-.band h2 {
-  font-size: 40px;
-  font-weight: 400;
-  color: #fff;
-}
-.flex-item {
-  display: flex;
-  max-width: 992px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.band {
-  text-align: center;
-  background: #cc8b8b;
-  margin: 66px 150px;
-  padding: 15px;
-}
-.six-item {
-  margin-bottom: 70px;
-  text-align: center;
-}
-.six-item:nth-of-type(2n) {
-  padding-left: 70px;
-}
-.six-item p {
-  margin: 0 auto;
-  font-size: 23px;
-  margin-bottom: 15px;
-}
-
-.six-item img {
-  max-width: 350px;
-}
-
-@media screen and (max-width: 992px) {
-  nav ul li a {
-    font-size: 14px;
-  }
-  .navbtn {
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(45deg, #eba3a6 30%, #65bff2);
-    padding: 15px 12px;
-    font-size: 12px;
-    font-weight: 100;
-    color: #fff;
-    letter-spacing: 2px;
-  }
-
-  /* いつか独立してみたい */
-  .check-point {
-    height: 50%;
-  }
-  .check-left {
-    margin-top: -55px;
-    margin-bottom: 39px;
-  }
-  .check-left ul li {
-    padding-top: 36px;
-    font-size: 18px;
-  }
-  .check-left ul li span {
-    margin-right: 5px;
-  }
-  .kaiketu-container p {
-    font-size: 17px;
-  }
-
-  /* よくある起業スクールとの違い */
-  .sp {
-    display: none;
-  }
-  .feature-container {
-    background: #fff;
-    padding: 50px;
-    margin: 50px;
-  }
-  .feature-container h2 {
-    font-size: 31px;
-  }
-  .number-box {
-    font-size: 65px;
-  }
-  .p-box {
+  /* いつか独立したいあなたへ */
+  .worries-point {
     font-size: 20px;
-    margin: 0 auto;
   }
-
-  .p-box span {
-    font-size: 13px;
+  .kaiketu-container h2 {
+    font-size: 30px;
   }
-  .feature-container img {
-    width: 200px;
-  }
-  .feature-wrapper {
-    background: url(../img/hemp-cloth.jpg);
-    background-color: rgba(255, 255, 255, 0.7);
-    background-blend-mode: lighten;
-    background-repeat: repeat;
-    padding-top: 40px;
-    padding-bottom: 130px;
-  }
-
-  /* ６つのコンテンツ */
-  .band {
-    margin: 50px 35px;
-  }
-  .six-item {
-    margin-bottom: 44px;
-  }
-  .six-item p {
-    margin-bottom: 12px;
-  }
-  .six-item:nth-of-type(2n) {
-    padding-left: 20px;
-  }
-  .feature-wrapper {
-    height: 113vh;
-  }
-}
-@media screen and (max-width: 768px) {
   /* よくある起業スクールとの違い */
-  .feature-wrapper {
-    padding-bottom: 250px;
-  }
   .feature-container {
     padding: 10px;
-    margin: 23px 10px;
+    margin: 0px;
     padding-bottom: 70px;
   }
   .feature-container h2 {
@@ -535,11 +560,12 @@ header {
   .rev .feature-box {
     order: 1;
   }
-  .feature-wrapper {
-    height: 160vh;
+
+  /* ６つのコンテンツ */
+  .band h2 {
+    font-size: 30px;
   }
-}
-@media screen and (max-width: 500px) {
+
   /* ナビバー */
   .g-navi-list {
     display: block;
@@ -556,16 +582,23 @@ header {
   }
   /* いつか独立してみたいあなたへ */
   .pc {
+    display: block;
+  }
+  .hero .clear {
     display: none;
   }
   .sp {
     display: block;
+    width: 100%;
+  }
+  .sab {
+    display: none;
   }
   .worries-point {
     font-size: 25px;
   }
   .check-point {
-    padding: 80px 26px 90px 24px;
+    padding: 25px 26px 90px 30px;
     display: block;
   }
   .check-left ul li {
@@ -581,17 +614,13 @@ header {
   }
 
   /* 図解 */
-  .structure {
-    margin: 0 calc(50% - 50vw);
-  }
+
   .structure img {
     margin-top: 45px;
   }
 
   /* よくある起業スクールとの違いとは？ */
-  .feature-wrapper {
-    height: 145vh;
-  }
+
   .feature-container {
     padding: 10px;
     margin: 23px 10px;
@@ -631,15 +660,92 @@ header {
   .rev .feature-box {
     order: 1;
   }
+  .number-box {
+    font-size: 59px;
+  }
+  .feature-container h2 {
+    margin-top: 0px;
+    padding-top: 48px;
+  }
+  .feature-container h2 {
+    font-size: 25px;
+  }
+  .p-box {
+    font-size: 15px;
+  }
   /* 6つのコンテンツ */
   .band {
     margin: 40px 0px;
   }
   .band h2 {
-    font-size: 26px;
+    font-size: 30px;
   }
   .six-item:nth-of-type(2n) {
     padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pc-header {
+    display: none;
+  }
+  .pc {
+    display: none;
+  }
+  .hero .clear {
+    display: block;
+  }
+  .header-bottom {
+    background: #f7eee9;
+  }
+  .clear {
+    display: block;
+  }
+  .sab {
+    display: block;
+  }
+  .navbtn {
+    padding: 16px 12px;
+    font-size: 13px;
+  }
+  .check-point {
+    padding: 25px 50px 38px 50px;
+    position: relative;
+    background-image: none;
+    background-color: #f4ece1;
+  }
+  .kaiketu-container h2 {
+    margin-top: 52px;
+    font-size: 23px;
+  }
+  .kaiketu-container p span {
+    font-size: 28px;
+  }
+  .p-box span {
+    font-size: 12px;
+  }
+  /* トライアングル */
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 90px 0 90px;
+    border-color: #867474 transparent transparent transparent;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  /* よくある起業スクールとの違い */
+  .feature-container h2 {
+    font-size: 19px;
+  }
+  /* 6つのコンテンツ */
+  .band h2 {
+    font-size: 25px;
+  }
+  .six-item p {
+    font-size: 19px;
   }
 }
 

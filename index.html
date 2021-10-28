@@ -19,12 +19,12 @@
       <h1>起業大学</h1>
       <ul>
         <li><a href="#hero">トップ</a></li>
-        <li><a href="#sixcontents">６つのコンテンツ</a></li>
+        <li><a href="#sixcontents">６つのステップ</a></li>
         <li><a href="#support-member">専門メンバー</a></li>
         <li><a href="#">受講生の声</a></li>
         <li><a href="#">受講までの流れ</a></li>
         <li><a href="#">
-          <button class="navbtn"onclick="location.href='#'">
+          <button class="navbtn" onclick="location.href='#'">
             WEBで無料相談会 <span>▶︎</span>
           </button>
         </a></li>
@@ -38,7 +38,7 @@
       <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
         <ul>
           <li><a href="#hero">トップ</a></li>
-          <li><a href="#sixcontents">６つのコンテンツ</a></li>
+          <li><a href="#sixcontents">６つのステップ</a></li>
           <li><a href="#support-member">専門メンバー</a></li>
           <li><a href="#">受講生の声</a></li>
           <li><a href="#">受講までの流れ</a></li>
@@ -60,7 +60,8 @@
     <div class="hero-container">
       <div class="header-bottom">
         <a href="#">
-          <img src="./img/header-btn.png" alt="お申し込みはこちら">
+          <img src="./img/header-btn.png" alt="お申し込みはこちら" class="pc">
+          <img src="./img/sp-btn.png" alt="お申し込みはこちら" class="clear">
         </a>
       </div>
     </div>
@@ -69,7 +70,7 @@
     <section class="worries w-container">
       <div class="worries-point">
         <p>いつか独立してみたいあなたへ<br>
-        こんなお悩みはありませんか？</p>
+          こんなお悩みはありませんか？</p>
       </div>
       <div class="check-point">
         <div class="check-left">
@@ -96,9 +97,14 @@
             </li>
           </ul>
         </div>
-        <div class="check-right"></div>
+        <div class="check-right">
+          <!-- ↓↓ tsuchiya update ↓↓ -->
+          <img src="./img/　check.png" alt="悩む女性">
+          <!-- ↑↑ tsuchiya update ↑↑ -->
+        </div>
       </div>
     </section>
+    <div class="triangle"></div>
     <section id="kaiketu">
       <div class="kaiketu-container w-container">
         <h2>そんなあなたに、ぴったり！</h2>
@@ -107,7 +113,7 @@
           <br>
             <p>あなたの<span>「なりたい」</span>を実現します。</p>
             <div class="structure">
-              <img src="./img/illust.png" alt="">
+              <img src="./img/illust.png" alt="サービスの仕組み">
             </div>
       </div>
     </section>
@@ -124,13 +130,13 @@
                 <p>あなたの「なりたい！」に合わせて専門家チームが編成</p>
               </div>
             </div>
-            <img src="./img/school01.png" alt="" class="pc">
+            <img src="./img/school01.png" alt="イメージ画像1" class="pc">
 
-            <img src="./img/point01.jpeg" alt="" class="sab">
+            <img src="./img/point01.jpeg" alt="イメージ画像1" class="sab">
           </div>
           <div class="outer rev">
-            <img src="./img/school03.png" alt="" class="pc">
-            <img src="./img/point02.jpeg" alt="" class="sab">
+            <img src="./img/school03.png" alt="一メー自画像2" class="pc">
+            <img src="./img/point02.jpeg" alt="一メー自画像2" class="sab">
             <div class="feature-box">
               <div class="number-box">
                 02
@@ -150,8 +156,8 @@
                   <span>（クラウドファンデング、WEBデザイン制作技術習得など）</span>
               </div>
             </div>
-            <img src="./img/school02.png" alt="" class="pc">
-            <img src="./img/point03.jpeg" alt="" class="sab">
+            <img src="./img/school02.png" alt="イメージ画像3" class="pc">
+            <img src="./img/point03.jpeg" alt="イメージ画像3" class="sab">
           </div>
         </div>
       </div>
@@ -159,37 +165,36 @@
     <section id="sixcontents">
       <div class="sixcontents w-container">
         <div class="band">
-          <h2>起業まで導く6つのコンテンツ</h2>
+          <h2>起業まで導く6つのステップ</h2>
         </div>
         <div class="sixcontents-wrapper">
           <div class="flex-item">
             <div class="six-item">
               <p>１.人生の目的目標設定</p> 
-              <img src="./img/AdobeStock_90622423_Preview 1.png" alt="">
+              <img src="./img/AdobeStock_90622423_Preview 1.png" alt="目標設定">
             </div> 
             <div class="six-item">
               <p>2.自己分析とビジネスプラン設計</p> 
-              <img src="./img/AdobeStock_90622423_Preview 1.png" alt="">
+              <img src="./img/AdobeStock_90622423_Preview 1.png" alt="プラン設計">
             </div> 
             <div class="six-item">
               <p>3.ロードマップ作成</p> 
-              <img src="./img/AdobeStock_90622423_Preview 1.png" alt="">
+              <img src="./img/AdobeStock_90622423_Preview 1.png" alt="ロードマップ">
             </div> 
             <div class="six-item">
               <p>4.専門技術やスキルの習得</p> 
-              <img src="./img/AdobeStock_90622423_Preview 1.png" alt="">
+              <img src="./img/AdobeStock_90622423_Preview 1.png" alt="スキルの習得">
             </div> 
             <div class="six-item">
               <p>5.WEBデザイン・ECサイト制作</p> 
-              <img src="./img/AdobeStock_90622423_Preview 1.png" alt="">
+              <img src="./img/AdobeStock_90622423_Preview 1.png" alt="Web制作">
             </div> 
             <div class="six-item">
               <p>6.クラウドファンデングサポート</p> 
-              <img src="./img/AdobeStock_90622423_Preview 1.png" alt="">
+              <img src="./img/AdobeStock_90622423_Preview 1.png" alt="サポート体制">
             </div> 
           </div>
         </div>
-
       </div>
     </section>
      <!-- ナガイ担当部分 ------------------------------------>
