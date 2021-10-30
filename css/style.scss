@@ -284,6 +284,18 @@ header {
   max-width: 350px;
 }
 
+
+/* 変更分------------------------↓ */
+@media screen and (max-width: 400px) {
+
+  .six-item img {
+    width: 100%;
+  }
+
+}
+/* 変更分------------------------↑ */
+
+
 @media screen and (max-width: 992px) {
   nav ul li a {
     font-size: 14px;

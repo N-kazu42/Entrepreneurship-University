@@ -22,10 +22,12 @@ a {
   top: 0;
   left: 0;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.8);
@@ -36,11 +38,13 @@ a {
 
 .pc-navber ul {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   top: 0;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin-right: 10px;
@@ -78,12 +82,15 @@ a {
 
 .pc-navber {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -91,6 +98,7 @@ a {
 .navbtn {
   border: none;
   border-radius: 5px;
+  background: -webkit-linear-gradient(45deg, #eba3a6 30%, #65bff2);
   background: linear-gradient(45deg, #eba3a6 30%, #65bff2);
   padding: 18px 36px;
   font-size: 16px;
@@ -157,9 +165,11 @@ header {
   background-color: #fdf5ea;
   height: auto;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
@@ -196,6 +206,7 @@ header {
   padding-top: 36px;
   font-size: 22px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -204,10 +215,16 @@ header {
   margin-right: 5px;
 }
 
+.check-type {
+  color: #e57b7b;
+  font-size: x-large;
+}
+
 .check-right {
   content: "";
-  -ms-flex-preferred-size: 26%;
-      flex-basis: 26%;
+  -webkit-flex-basis: 26%;
+      -ms-flex-preferred-size: 26%;
+          flex-basis: 26%;
 }
 
 .kaiketu-container h2 {
@@ -269,9 +286,11 @@ header {
 
 .feature-box {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -297,9 +316,11 @@ header {
 
 .outer {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 35px;
@@ -325,13 +346,16 @@ header {
 
 .flex-item {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   max-width: 992px;
   margin: 0 auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -362,6 +386,14 @@ header {
   max-width: 350px;
 }
 
+/* 変更分------------------------↓ */
+@media screen and (max-width: 400px) {
+  .six-item img {
+    width: 100%;
+  }
+}
+
+/* 変更分------------------------↑ */
 @media screen and (max-width: 992px) {
   nav ul li a {
     font-size: 14px;
@@ -372,6 +404,7 @@ header {
   .navbtn {
     border: none;
     border-radius: 5px;
+    background: -webkit-linear-gradient(45deg, #eba3a6 30%, #65bff2);
     background: linear-gradient(45deg, #eba3a6 30%, #65bff2);
     padding: 19px 15px;
     font-size: 12px;
@@ -387,6 +420,10 @@ header {
   .check-left {
     margin-top: -55px;
     margin: 0 0 39px 0;
+  }
+  .check-type {
+    color: #e57b7b;
+    font-size: x-large;
   }
   .check-left ul li {
     padding-top: 36px;
@@ -652,20 +689,24 @@ header {
   }
   .rev {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .rev img {
     -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
   }
   .rev .feature-box {
     -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
   }
@@ -756,20 +797,24 @@ header {
   }
   .rev {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .rev img {
     -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
   }
   .rev .feature-box {
     -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
   }
@@ -869,6 +914,12 @@ header {
   }
 }
 
+@media screen and (max-width: 460px) {
+  .outer img {
+    width: 100%;
+  }
+}
+
 /* ナガイ担当ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 #support-member {
   background-color: #fff6f6;
@@ -892,9 +943,11 @@ header {
   margin: 5rem 10rem;
   border-radius: 50px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -902,13 +955,16 @@ header {
 .support-member-box {
   padding: 3rem;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   max-width: 1000px;
 }
 
@@ -987,19 +1043,23 @@ header {
 .schedule-wrapper {
   margin: 5rem 10rem;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .schedule-box {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
@@ -1064,9 +1124,11 @@ header {
 .voice-wrapper {
   margin: 5rem 10rem;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1074,10 +1136,12 @@ header {
 .voice-box {
   padding: 3rem;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .voice-box img {
@@ -1154,9 +1218,11 @@ header {
 .flow-wrapper {
   margin: 5rem 10rem;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1164,10 +1230,12 @@ header {
 .flow-box {
   padding: 3rem;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
