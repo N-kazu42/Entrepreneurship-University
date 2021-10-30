@@ -160,6 +160,10 @@ header {
 .check-left ul li span {
   margin-right: 5px;
 }
+.check-type {
+  color: #e57b7b;
+  font-size: x-large;
+}
 .check-right {
   content: "";
   flex-basis: 26%;
@@ -307,6 +311,11 @@ header {
     margin-top: -55px;
     margin: 0 0 39px 0;
   }
+  .check-type {
+    color: #e57b7b;
+    font-size: x-large;
+  }
+
   .check-left ul li {
     padding-top: 36px;
     font-size: 18px;
@@ -791,6 +800,12 @@ header {
     font-size: 19px;
   }
 }
+@media screen and (max-width: 460px) {
+  .outer img {
+    width: 100%;
+  }
+}
+
 
 /* ナガイ担当ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 
