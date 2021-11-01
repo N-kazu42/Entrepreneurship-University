@@ -116,7 +116,7 @@ header {
 
 /* ↓↓ tsuchiya update ↓↓ */
 .check-point {
-  padding: 100px 50px 0 50px;
+  padding: 55px 50px 0 50px;
   /* background-image: url(../img/check-point.png); */
   /* background-position: top center; */
   /* background-size: cover; */
@@ -153,8 +153,8 @@ header {
 /* ↑↑ tsuchiya update ↑↑ */
 
 .check-left ul li {
-  padding-top: 36px;
-  font-size: 22px;
+  padding-top: 30px;
+  font-size: 18px;
   display: flex;
 }
 .check-left ul li span {
@@ -167,6 +167,9 @@ header {
 .check-right {
   content: "";
   flex-basis: 26%;
+}
+.check-right img {
+  width: 100%;
 }
 .kaiketu-container h2 {
   text-align: center;
@@ -284,17 +287,13 @@ header {
   max-width: 350px;
 }
 
-
 /* 変更分------------------------↓ */
 @media screen and (max-width: 400px) {
-
   .six-item img {
     width: 100%;
   }
-
 }
 /* 変更分------------------------↑ */
-
 
 @media screen and (max-width: 992px) {
   nav ul li a {
@@ -321,7 +320,6 @@ header {
   }
   .check-left {
     margin-top: -55px;
-    margin: 0 0 39px 0;
   }
   .check-type {
     color: #e57b7b;
@@ -329,8 +327,11 @@ header {
   }
 
   .check-left ul li {
-    padding-top: 36px;
-    font-size: 18px;
+    padding-top: 21px;
+    font-size: 16px;
+  }
+  .check-left ul {
+    margin: 40px 0;
   }
   .check-left ul li span {
     margin-right: 5px;
@@ -569,6 +570,13 @@ header {
   .check-right img {
     display: none;
   }
+  .check-left {
+    margin-top: 0;
+  }
+  .check-left ul li:first-child {
+    padding-top: 0px;
+  }
+
   .kaiketu-container h2 {
     font-size: 30px;
   }
@@ -800,6 +808,17 @@ header {
     margin-top: 10px;
   }
 
+  /* サービスの仕組み */
+  .pc {
+    display: none;
+  }
+  .clear {
+    display: block;
+  }
+  /* 仕組み */
+  .structure img {
+    margin-top: 72px;
+  }
   /* よくある起業スクールとの違い */
   .feature-container h2 {
     font-size: 19px;
@@ -809,14 +828,23 @@ header {
     font-size: 25px;
   }
   .six-item p {
-    font-size: 19px;
+    font-size: 17px;
+  }
+  .six-item img {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 460px) {
   .outer img {
     width: 100%;
   }
+  .last-item img {
+    height: 238px;
+    object-fit: cover;
+    width: 100vh;
+  }
 }
+
 
 
 /* ナガイ担当ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
